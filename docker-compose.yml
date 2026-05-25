@@ -1,0 +1,14 @@
+# Optional local Redis (requires Docker Desktop)
+# Start: docker compose up -d
+# Then in apps/server/.env: REDIS_HOST=127.0.0.1 REDIS_PORT=6379 (no REDIS_URL)
+
+services:
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+
+volumes:
+  redis_data:

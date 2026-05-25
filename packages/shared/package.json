@@ -1,0 +1,14 @@
+{
+  "name": "@vedaai/shared",
+  "version": "1.0.0",
+  "private": true,
+  "main": "./src/types.ts",
+  "types": "./src/types.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
